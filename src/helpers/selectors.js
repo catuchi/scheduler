@@ -13,3 +13,17 @@ export function getAppointmentsForDay(state, day) {
 
   return results;
 }
+
+export function getInterview(state, interview) {
+  // interview object is given
+  // state.appointments gives me all the appointments
+  //
+  if (!interview) {
+    return null;
+  }
+  let result = {};
+  result["student"] = interview.student;
+  result["interviewer"] = state.interviewers[interview.interviewer];
+
+  return result;
+}
