@@ -14,6 +14,25 @@ export function getAppointmentsForDay(state, day) {
   return results;
 }
 
+export function getInterviewersForDay(state, day) {
+  let dayObject = state.days.find((item) => item.name === day);
+
+  if (!dayObject) {
+    return [];
+  }
+
+  let results = dayObject.appointments.map(
+    (appointment) => state.appointments[appointment].interview.interviewer
+  );
+
+  results = results.flat(Infinity);
+  results = results.filter((x) => x !== null);
+
+  const interviewers = interviewers.map((y) => state.interviewers[y]);
+
+  return interviewers;
+}
+
 export function getInterview(state, interview) {
   // interview object is given
   // state.appointments gives me all the appointments
