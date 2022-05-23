@@ -4,11 +4,16 @@ import axios from "axios";
 import "components/Application.scss";
 import DayList from "./DayList";
 import Appointment from "./Appointment";
-import { getAppointmentsForDay, getInterview } from "helpers/selectors";
+import {
+  getAppointmentsForDay,
+  getInterview,
+  getInterviewersForDay,
+} from "helpers/selectors";
 
 export default function Application(props) {
   const [state, setState] = useState({
     day: "Monday",
+    // day: "",
     days: [],
     appointments: {},
     interviewers: {},
@@ -29,12 +34,29 @@ export default function Application(props) {
         }));
       })
       .catch((err) => console.error(err));
-  });
+  }, []);
+
+  function bookInterview(id, interview) {
+    const appointment = {
+      ...state.appointments[id],
+      interview: { ...interview },
+    };
+    const appointments = {
+      ...state.appointments,
+      [id]: appointment,
+    };
+    setState({
+      ...state,
+      appointments,
+    });
+  }
 
   const dailyAppointments = getAppointmentsForDay(state, state.day);
+  const interviewers = getInterviewersForDay(state, state.day);
 
   const schedule = dailyAppointments.map((item) => {
     const interview = getInterview(state, item.interview);
+    // console.log("interview:", interview);
 
     return (
       <Appointment
@@ -42,6 +64,8 @@ export default function Application(props) {
         id={item.id}
         time={item.time}
         interview={interview}
+        interviewers={interviewers}
+        bookInterview={bookInterview}
       />
     );
   });
@@ -68,7 +92,10 @@ export default function Application(props) {
           alt="Lighthouse Labs"
         />
       </section>
-      <section className="schedule">{schedule}</section>
+      <section className="schedule">
+        {schedule}
+        <Appointment time={"5pm"} />
+      </section>
     </main>
   );
 }
