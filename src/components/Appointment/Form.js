@@ -15,6 +15,7 @@ export default function Form(props) {
     setCurrentStudent("");
     setCurrentInterviewer(null);
     onCancel();
+    setError("");
   };
 
   function validate() {
@@ -26,7 +27,7 @@ export default function Form(props) {
       setError("Please select an interviewer");
       return;
     }
-
+    setError("");
     onSave(currentStudent, currentInterviewer);
   }
 
@@ -48,6 +49,12 @@ export default function Form(props) {
         */
           />
         </form>
+        {/* {!currentStudent && currentInterviewer && (
+          <section className="appointment__validation">{error}</section>
+        )}
+        {!currentInterviewer && (
+          <section className="appointment__validation">{error}</section>
+        )} */}
         <section className="appointment__validation">{error}</section>
         <InterviewerList
           interviewers={interviewers}
