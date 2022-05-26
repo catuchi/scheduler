@@ -53,24 +53,12 @@ npm run cypress
 
 ## Final Product
 
-!["Appointment-form"](#)
-!["Appointments-for-Monday"](#)
-!["Appointments-for-Tuesday"](#)
-!["Confirmation-status"](#)
-!["created-appointment"](#)
-!["Deleting-status"](#)
-!["Error-messsage"](#)
-!["Interview-Scheduler"](#)
-!["Saving-status"](#)
-
-## Getting Started
-
-- Install all dependencies (using the `npm install` command).
-- Run the development web server using the `node express_server.js` command.
-
-# Interview Scheduler
-
-## Final Product
-
-!["screenshot description"](#)
-!["screenshot description"](#)
+!["Appointment-form"](https://github.com/catuchi/scheduler/blob/master/docs/Appointment-form.png?raw=true)
+!["Appointments-for-Monday"](https://github.com/catuchi/scheduler/blob/master/docs/Appointments-for-Monday.png?raw=true)
+!["Appointments-for-Tuesday"](https://github.com/catuchi/scheduler/blob/master/docs/Appointments-for-Tuesday.png?raw=true)
+!["Confirmation-status"](https://github.com/catuchi/scheduler/blob/master/docs/Confirmation-status.png?raw=true)
+!["created-appointment"](https://github.com/catuchi/scheduler/blob/master/docs/Deleting-status.png?raw=true)
+!["Deleting-status"](https://github.com/catuchi/scheduler/blob/master/docs/Error-messsage.png?raw=true)
+!["Error-messsage"](https://github.com/catuchi/scheduler/blob/master/docs/Interview-Scheduler.png?raw=true)
+!["Interview-Scheduler"](https://github.com/catuchi/scheduler/blob/master/docs/Saving-status.png?raw=true)
+!["Saving-status"](https://github.com/catuchi/scheduler/blob/master/docs/created-appointment.png?raw=true)
