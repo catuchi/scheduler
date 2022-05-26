@@ -53,12 +53,12 @@ npm run cypress
 
 ## Final Product
 
-!["Appointment-form"](https://github.com/catuchi/scheduler/blob/master/docs/Appointment-form.png?raw=true)
+!["Appointment-form"](https://github.com/catuchi/scheduler/blob/master/docs/Appointment-form.jpeg?raw=true)
 !["Appointments-for-Monday"](https://github.com/catuchi/scheduler/blob/master/docs/Appointments-for-Monday.png?raw=true)
 !["Appointments-for-Tuesday"](https://github.com/catuchi/scheduler/blob/master/docs/Appointments-for-Tuesday.png?raw=true)
-!["Confirmation-status"](https://github.com/catuchi/scheduler/blob/master/docs/Confirmation-status.png?raw=true)
-!["created-appointment"](https://github.com/catuchi/scheduler/blob/master/docs/Deleting-status.png?raw=true)
-!["Deleting-status"](https://github.com/catuchi/scheduler/blob/master/docs/Error-messsage.png?raw=true)
-!["Error-messsage"](https://github.com/catuchi/scheduler/blob/master/docs/Interview-Scheduler.png?raw=true)
+!["Confirmation-status"](https://github.com/catuchi/scheduler/blob/master/docs/Confirmation-status.jpeg?raw=true)
+!["created-appointment"](https://github.com/catuchi/scheduler/blob/master/docs/created-appointment.jpeg?raw=true)
+!["Deleting-status"](https://github.com/catuchi/scheduler/blob/master/docs/Deleting-status.jpeg?raw=true)
+!["Error-messsage"](https://github.com/catuchi/scheduler/blob/master/docs/Error-messsage.jpeg?raw=true)
 !["Interview-Scheduler"](https://github.com/catuchi/scheduler/blob/master/docs/Saving-status.png?raw=true)
-!["Saving-status"](https://github.com/catuchi/scheduler/blob/master/docs/created-appointment.png?raw=true)
+!["Saving-status"](https://github.com/catuchi/scheduler/blob/master/docs/Saving-status.jpeg?raw=true)
