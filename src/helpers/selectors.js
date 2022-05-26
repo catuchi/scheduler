@@ -24,15 +24,6 @@ export function getInterviewersForDay(state, day) {
   return dayObject.interviewers.map(
     (interviewerId) => state.interviewers[interviewerId]
   );
-
-  // results = results.flat(Infinity);
-  // results = results.filter((x) => x !== null);
-
-  // const interviewers = interviewers.map(
-  //   (interviewersId) => state.interviewers[interviewersId]
-  // );
-
-  // return interviewers;
 }
 
 export function getInterview(state, interview) {

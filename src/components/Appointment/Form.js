@@ -43,24 +43,14 @@ export default function Form(props) {
             value={currentStudent}
             onChange={(event) => setCurrentStudent(event.target.value)}
             data-testid="student-name-input"
-            /*
-          This must be a controlled component
-          your code goes here
-        */
           />
         </form>
-        {/* {!currentStudent && currentInterviewer && (
-          <section className="appointment__validation">{error}</section>
-        )}
-        {!currentInterviewer && (
-          <section className="appointment__validation">{error}</section>
-        )} */}
+
         <section className="appointment__validation">{error}</section>
         <InterviewerList
           interviewers={interviewers}
           value={currentInterviewer}
           setInterviewer={setCurrentInterviewer}
-          /* your code goes here */
         />
       </section>
       <section className="appointment__card-right">

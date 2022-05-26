@@ -42,7 +42,6 @@ export default function useApplicationData() {
     const updatedDays = [...state.days];
     const updatedDay = { ...state.days.find((day) => day.name === state.day) };
 
-    // const spots = countSpots(state);
     const spots = countSpots(updatedState);
     updatedDay.spots = spots;
 
@@ -50,8 +49,6 @@ export default function useApplicationData() {
       (day) => day.name === state.day
     );
     updatedDays[updatedDayIndex] = updatedDay;
-
-    // updatedState.days = updatedDays;
 
     return updatedDays;
   }

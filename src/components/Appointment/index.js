@@ -34,7 +34,6 @@ export default function Appointment(props) {
     bookInterview(id, interview)
       .then(() => transition(SHOW))
       .catch((error) => transition(ERROR_SAVE, true));
-    // .catch((err) => console.error(err));
   }
 
   function deleteInterview() {
@@ -42,7 +41,6 @@ export default function Appointment(props) {
     cancelInterview(id)
       .then(() => transition(EMPTY))
       .catch((error) => transition(ERROR_DELETE, true));
-    // .catch((err) => console.error(err));
   }
 
   function editInterview() {
